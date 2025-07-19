@@ -106,4 +106,18 @@ fileInput.addEventListener('change', () => {
     }
 })
 
+const colors = ['#008181', '#1db954', '#ff7200', '#1283cf', '#333']
 
+let colorLoop;
+let index = 0
+
+function altColors(){
+      colorLoop = setInterval(() => {
+        document.body.style.backgroundColor = colors[index]
+        index = (index + 1) % colors.length
+    }, 2000)
+}
+
+window.addEventListener('load', ()=>{
+    altColors()
+})
