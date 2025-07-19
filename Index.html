@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Encryption Box</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+    <button id="note">
+
+    </button>
+
+    <div class="container">
+        <h1>ENCRYPTO</h1>
+        <div class="tabs">
+            <button id="Encrypt" class="EB">Encrypt</button><button id="Decrypt" class="DB">Decrypt</button>
+        </div>
+        <div class="upload-tab" id="uploadTab">
+            <div class="upload-icon">📁</div>
+            <h3>Click to select a file or drag & drop</h3>
+            
+            <p>Supports text files, images and videos</p>
+        </div>
+<input type="file" id="fileInput" accept="*/*">
+         <div id="encrypt-file-info" class="file-info" style="display: none;">
+                <div class="file-name"></div>
+                <div class="file-size"></div>
+            </div>
+
+            <div id="filePreview"></div>
+
+        <div class="lower-tabs">
+            <input type="password" id="password" placeholder="Enter Encryption Password"/> <br> <br>
+        </div>
+        <button id="EncryptFileBtn">🔒 Encrypt File</button>
+    <div class="download-tab">
+            <h3>Click Below To Download Encrypted File</h3>
+            <button id="download-encrypted-file">⬇️Download</button>
+        </div>
+    
+    </div>
+
+    <!--Decryption HTML-->
+    
+    <div class="container2">
+        <h1>ENCRYPTO</h1>
+        <div class="tabs">
+            <button id="Encrypt2" class="EB2">Encrypt</button><button id="Decrypt2" class="DB2">Decrypt</button>
+        </div>
+        <div class="upload-tab" id="uploadtab2">
+            <div class="upload-icon">📁</div>
+            <h3>Click to select encrypted file or drag & drop</h3>
+            <input type="file" id="fileInput">
+            <p>Select encrypted files to Decrypt</p>
+            <div id="encrypt-file-info" class="file-info" style="display: none;">
+                <div class="file-name"></div>
+                <div class="file-size"></div>
+            </div>
+        </div>
+        <div class="lower-tabs">
+            <input type="password" id="password2" placeholder="Enter Decryption Password"/> <br> <br>
+        </div>
+        <button id="DecryptFileBtn">🔓Decrypt File</button>
+        <div class="download-tab">
+            <h3>Click Below To Download Decrypted File</h3>
+            <button id="download-decrypted-file">⬇️Download</button>
+        </div>
+    </div>
+
+    <script src="Scripts.js"></script>
+    <script src="Scripts2.js"></script>
+</body>
+</html>
